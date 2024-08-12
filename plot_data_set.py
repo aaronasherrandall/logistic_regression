@@ -26,5 +26,8 @@ plt.ylabel('Petal Width')
 plt.legend()
 plt.grid(True)
 
+# Save the plot as a PNG file
+plt.savefig('plot.png')
+
 # Show the plot
 plt.show()
