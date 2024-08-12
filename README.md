@@ -102,3 +102,57 @@ model.fit(X_train, y_train)
 # The learned weights (coefficients) and bias (intercept)
 print(f"Weights: {model.coef_}")
 print(f"Bias: {model.intercept_}")
+```
+### Output
+
+```python
+Accuracy: 1.0
+```
+
+This indicates that the model made perfect predictions on the test data.
+
+## Plotting the Data
+
+To visualize the data on a Cartesian plane:
+
+```python
+import matplotlib.pyplot as plt
+
+# Your dataset
+X_train = [[1, 0], [4, 1], [2, 0], [5, 2], [2, 1]]
+y_train = [1, 0, 1, 0, 1]
+
+# Convert data to separate lists for plotting
+x1 = [point[0] for point in X_train]  # Petal Lengths
+x2 = [point[1] for point in X_train]  # Petal Widths
+
+# Create the plot
+plt.figure(figsize=(8, 6))
+
+# Plot each point and color based on the label
+for i in range(len(X_train)):
+    if y_train[i] == 1:
+        plt.scatter(x1[i], x2[i], color='blue', label='Setosa' if i == 0 else "")
+    else:
+        plt.scatter(x1[i], x2[i], color='red', label='Not Setosa' if i == 0 else "")
+
+# Labeling the plot
+plt.title('Petal Length vs Petal Width')
+plt.xlabel('Petal Length')
+plt.ylabel('Petal Width')
+plt.legend()
+plt.grid(True)
+
+# Show the plot
+plt.show()
+```
+
+This will generate a scatter plot where points labeled as 1 are colored blue, and points labeled as 0 are colored red.
+
+## Results
+
+The model achieved an accuracy of 1.0, meaning it correctly classified all the test data points. The scatter plot visually demonstrates the data distribution and how well the logistic regression model fits the data.
+
+## Conclusion
+
+This example demonstrates the process of applying logistic regression to a small dataset, including an algebraic explanation, Python implementation, and data visualization. Logistic regression is a powerful tool for binary classification, and this example illustrates its effectiveness even with a simple dataset.
