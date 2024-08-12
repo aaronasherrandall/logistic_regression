@@ -149,6 +149,8 @@ plt.show()
 
 This will generate a scatter plot where points labeled as 1 are colored blue, and points labeled as 0 are colored red.
 
+![Petal Length vs Petal Width](plot.png)
+
 ## Results
 
 The model achieved an accuracy of 1.0, meaning it correctly classified all the test data points. The scatter plot visually demonstrates the data distribution and how well the logistic regression model fits the data.
