@@ -1,4 +1,4 @@
-# Logistic Regression Example: Iris Dataset
+# Supervised Logistic Regression Example: Iris Dataset
 
 This repository contains a simple example of applying logistic regression to a small dataset. The goal is to classify flowers as "Iris Setosa" or "Not Setosa" based on petal length and petal width.
 
